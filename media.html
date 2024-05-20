@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Everrise Engineering - Media</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="Images/logo/everrise logo finals.png" alt="Everrise Engineering Logo" id="company-logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#clients">Clients</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Media Gallery</h1>
+        <div class="company-gallery">
+            <div class="company-folder" onclick="showGallery('TexmoIndustries')">
+                <i class="fas fa-folder"></i>
+                <p>Texmo Industries</p>
+            </div>
+            <div class="company-folder" onclick="showGallery('GKNMHospital')">
+                <i class="fas fa-folder"></i>
+                <p>GKNM Hospital</p>
+            </div>
+            <div class="company-folder" onclick="showGallery('LGB')">
+                <i class="fas fa-folder"></i>
+                <p>LGB</p>
+            </div>
+            <div class="company-folder" onclick="showGallery('LMW')">
+                <i class="fas fa-folder"></i>
+                <p>LMW</p>
+            </div>
+            <!-- Add more folders as needed -->
+        </div>
+
+        <div id="TexmoIndustries" class="image-gallery" style="display: none;">
+            <div class="image-container">
+                <img src="Images/Panels/7.5kw dry test panel.jpeg" alt="7.5kw dry test panel">
+            </div>
+            <div class="image-container">
+                <img src="Images/Panels/7.5kw outer panel.jpeg" alt="7.5kw outer panel">
+            </div>
+            <!-- Add more images for Texmo Industries -->
+        </div>
+
+        <div id="GKNMHospital" class="image-gallery" style="display: none;">
+            <div class="image-container">
+                <img src="Images/Panels/apfc panel.jpeg" alt="APFC Panel">
+            </div>
+            <div class="image-container">
+                <img src="Images/Panels/Denim - 1.jpg" alt="Denim 1">
+            </div>
+            <!-- Add more images for GKNM Hospital -->
+        </div>
+
+        <div id="LGB" class="image-gallery" style="display: none;">
+            <div class="image-container">
+                <img src="Images/Panels/Denim 3.jpg" alt="Denim 3">
+            </div>
+            <div class="image-container">
+                <img src="Images/Panels/Full Panel.jpg" alt="Full Panel">
+            </div>
+            <!-- Add more images for LGB -->
+        </div>
+
+        <div id="LMW" class="image-gallery" style="display: none;">
+            <div class="image-container">
+                <img src="Images/Panels/panel 1.JPG" alt="Panel 1">
+            </div>
+            <div class="image-container">
+                <img src="Images/Panels/panel 2.JPG" alt="Panel 2">
+            </div>
+            <!-- Add more images for LMW -->
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-columns">
+            <div class="footer-column">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="#">Latest News</a></li>
+                    <li><a href="#">Product Updates</a></li>
+                    <li><a href="#">Consultation</a></li>
+                    <li><a href="#">Video Gallery</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Careers</h3>
+                <ul>
+                    <li><a href="#">Overview</a></li>
+                    <li><a href="#">Current Openings</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><a href="tel:+919842225896"><i class="fas fa-phone"></i> Phone: +91 9842225896</a></li>
+                    <li><a href="mailto:everrisechandru@gmail.com"><i class="fas fa-envelope"></i> Email: everrisechandru@gmail.com</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Address</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Head Office: 7/19 B Keeranatham, Varadhayangarpalayam Road, Saravanampatti, Coimbatore, 641035</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Branch Office: 19/3 North Street, CIT Nagar West, Chennai, 600035</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            © 2023 Everrise Engineering. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        function showGallery(companyId) {
+            const galleries = document.querySelectorAll('.image-gallery');
+            galleries.forEach(gallery => gallery.style.display = 'none');
+            document.getElementById(companyId).style.display = 'flex';
+        }
+    </script>
+</body>
+</html>
